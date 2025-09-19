@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Date/Time Format Section -->
+    <PreferenceCategory
+        android:title="@string/date_time_format"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:key="date_time_format"
+            android:title="@string/date_time_format"
+            android:summary="Current format: EEE dd.MM"
+            android:defaultValue="EEE dd.MM"
+            android:dialogTitle="Date/Time Format"
+            android:dialogMessage="Enter date/time format (e.g., EEE dd.MM, HH:mm, yyyy-MM-dd)" />
+
+    </PreferenceCategory>
+
+    <!-- Clock Font Section -->
+    <PreferenceCategory
+        android:title="@string/clock_font"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="clock_font"
+            android:title="@string/clock_font"
+            android:summary="Current font: Custom"
+            android:entries="@array/font_options"
+            android:entryValues="@array/font_values"
+            android:defaultValue="Custom" />
+
+        <Preference
+            android:key="custom_font"
+            android:title="@string/custom_font"
+            android:summary="Change the custom font" />
+
+        <SwitchPreferenceCompat
+            android:key="text_outline"
+            android:title="@string/text_outline"
+            android:summary="@string/contrast_text_outline"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Layout Section -->
+    <PreferenceCategory
+        android:title="@string/layout"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="screen_layout"
+            android:title="@string/screen_layout"
+            android:summary="Current layout: Centered"
+            android:entries="@array/layout_options"
+            android:entryValues="@array/layout_values"
+            android:defaultValue="CENTERED" />
+
+        <SwitchPreferenceCompat
+            android:key="invert_colors"
+            android:title="@string/invert_colors"
+            android:summary="@string/black_background"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="custom_image"
+            android:title="@string/custom_image"
+            android:summary="@string/replace_moon" />
+
+        <SwitchPreferenceCompat
+            android:key="image_fills_screen"
+            android:title="@string/full_screen_image"
+            android:summary="@string/image_fills_screen"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Notifications Section -->
+    <PreferenceCategory
+        android:title="@string/notifications"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="show_notifications"
+            android:title="@string/show_notifications"
+            android:summary="Display notification information"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="notification_count"
+            android:title="@string/notification_count"
+            android:summary="Show notification count"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="notification_preview"
+            android:title="@string/notification_preview"
+            android:summary="Show notification preview text"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Refresh Mode Section -->
+    <PreferenceCategory
+        android:title="@string/refresh_mode"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="refresh_mode"
+            android:title="@string/refresh_mode"
+            android:summary="Current mode: Hybrid"
+            android:entries="@array/refresh_mode_options"
+            android:entryValues="@array/refresh_mode_values"
+            android:defaultValue="HYBRID" />
+
+        <Preference
+            android:key="refresh_mode_info"
+            android:title="Refresh Mode Information"
+            android:summary="Learn about different refresh modes" />
+
+        <SeekBarPreference
+            android:key="refresh_interval"
+            android:title="@string/refresh_interval"
+            android:summary="5 minutes"
+            android:defaultValue="5"
+            android:min="1"
+            android:max="60"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Weather Section -->
+    <PreferenceCategory
+        android:title="@string/weather"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="show_weather"
+            android:title="@string/show_weather"
+            android:summary="Display weather information"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="weather_location"
+            android:title="@string/weather_location"
+            android:summary="Current location: Current Location"
+            android:defaultValue="Current Location"
+            android:dialogTitle="Weather Location"
+            android:dialogMessage="Enter city name or coordinates" />
+
+        <ListPreference
+            android:key="weather_units"
+            android:title="@string/weather_units"
+            android:summary="Current units: Celsius"
+            android:entries="@array/weather_units_options"
+            android:entryValues="@array/weather_units_values"
+            android:defaultValue="CELSIUS" />
+
+        <SeekBarPreference
+            android:key="weather_update_interval"
+            android:title="@string/weather_update_interval"
+            android:summary="30 minutes"
+            android:defaultValue="30"
+            android:min="5"
+            android:max="120"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Calendar Section -->
+    <PreferenceCategory
+        android:title="@string/calendar"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="show_calendar"
+            android:title="@string/show_calendar"
+            android:summary="Display calendar events"
+            android:defaultValue="false" />
+
+        <SeekBarPreference
+            android:key="calendar_days_ahead"
+            android:title="@string/calendar_days_ahead"
+            android:summary="7 days"
+            android:defaultValue="7"
+            android:min="1"
+            android:max="30"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="calendar_max_events"
+            android:title="@string/calendar_max_events"
+            android:summary="5 events"
+            android:defaultValue="5"
+            android:min="1"
+            android:max="20"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Power Management Section -->
+    <PreferenceCategory
+        android:title="@string/power_management"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="auto_brightness"
+            android:title="@string/auto_brightness"
+            android:summary="Automatically adjust brightness"
+            android:defaultValue="true" />
+
+        <SeekBarPreference
+            android:key="brightness_level"
+            android:title="@string/brightness_level"
+            android:summary="50%"
+            android:defaultValue="50"
+            android:min="10"
+            android:max="100"
+            app:showSeekBarValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="power_save_mode"
+            android:title="@string/power_save_mode"
+            android:summary="Enable power saving features"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="cpu_frequency_limit"
+            android:title="@string/cpu_frequency_limit"
+            android:summary="Limit CPU frequency for power saving"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Themes Section -->
+    <PreferenceCategory
+        android:title="@string/themes"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/theme_selection"
+            android:summary="Current theme: Classic"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="CLASSIC" />
+
+    </PreferenceCategory>
+
+    <!-- Image Sources Section -->
+    <PreferenceCategory
+        android:title="@string/image_sources"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            android:key="image_source"
+            android:title="Image Source"
+            android:summary="Current source: Local Images"
+            android:entries="@array/image_source_options"
+            android:entryValues="@array/image_source_values"
+            android:defaultValue="LOCAL" />
+
+        <ListPreference
+            android:key="image_rotation"
+            android:title="@string/image_rotation"
+            android:summary="Current rotation: Daily"
+            android:entries="@array/image_rotation_options"
+            android:entryValues="@array/image_rotation_values"
+            android:defaultValue="DAILY" />
+
+    </PreferenceCategory>
+
+    <!-- Advanced Section -->
+    <PreferenceCategory
+        android:title="@string/advanced"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="debug_mode"
+            android:title="@string/debug_mode"
+            android:summary="Enable debug logging and features"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="log_level"
+            android:title="@string/log_level"
+            android:summary="Current level: Info"
+            android:entries="@array/log_level_options"
+            android:entryValues="@array/log_level_values"
+            android:defaultValue="INFO" />
+
+        <SwitchPreferenceCompat
+            android:key="performance_monitoring"
+            android:title="@string/performance_monitoring"
+            android:summary="Monitor app performance"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="memory_optimization"
+            android:title="@string/memory_optimization"
+            android:summary="Optimize memory usage"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

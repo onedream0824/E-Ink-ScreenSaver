@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Font Options -->
+    <string-array name="font_options">
+        <item>Default</item>
+        <item>Custom</item>
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Condensed</item>
+        <item>Light</item>
+        <item>Thin</item>
+    </string-array>
+    
+    <string-array name="font_values">
+        <item>Default</item>
+        <item>Custom</item>
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Condensed</item>
+        <item>Light</item>
+        <item>Thin</item>
+    </string-array>
+    
+    <!-- Layout Options -->
+    <string-array name="layout_options">
+        <item>Centered</item>
+        <item>Left Aligned</item>
+        <item>Right Aligned</item>
+        <item>Full Screen</item>
+    </string-array>
+    
+    <string-array name="layout_values">
+        <item>CENTERED</item>
+        <item>LEFT_ALIGNED</item>
+        <item>RIGHT_ALIGNED</item>
+        <item>FULL_SCREEN</item>
+    </string-array>
+    
+    <!-- Refresh Mode Options -->
+    <string-array name="refresh_mode_options">
+        <item>Always On</item>
+        <item>Battery Saver</item>
+        <item>Hybrid</item>
+        <item>Deep Sleep</item>
+    </string-array>
+    
+    <string-array name="refresh_mode_values">
+        <item>ALWAYS_ON</item>
+        <item>BATTERY_SAVER</item>
+        <item>HYBRID</item>
+        <item>DEEP_SLEEP</item>
+    </string-array>
+    
+    <!-- Weather Units Options -->
+    <string-array name="weather_units_options">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    
+    <string-array name="weather_units_values">
+        <item>CELSIUS</item>
+        <item>FAHRENHEIT</item>
+    </string-array>
+    
+    <!-- Theme Options -->
+    <string-array name="theme_options">
+        <item>Classic</item>
+        <item>Modern</item>
+        <item>Minimal</item>
+        <item>Dark</item>
+        <item>Custom</item>
+    </string-array>
+    
+    <string-array name="theme_values">
+        <item>CLASSIC</item>
+        <item>MODERN</item>
+        <item>MINIMAL</item>
+        <item>DARK</item>
+        <item>CUSTOM</item>
+    </string-array>
+    
+    <!-- Image Source Options -->
+    <string-array name="image_source_options">
+        <item>Local Images</item>
+        <item>Random Internet</item>
+        <item>Unsplash API</item>
+        <item>Custom URL</item>
+    </string-array>
+    
+    <string-array name="image_source_values">
+        <item>LOCAL</item>
+        <item>RANDOM_INTERNET</item>
+        <item>UNSPLASH_API</item>
+        <item>CUSTOM_URL</item>
+    </string-array>
+    
+    <!-- Image Rotation Options -->
+    <string-array name="image_rotation_options">
+        <item>Daily</item>
+        <item>Hourly</item>
+        <item>Manual</item>
+    </string-array>
+    
+    <string-array name="image_rotation_values">
+        <item>DAILY</item>
+        <item>HOURLY</item>
+        <item>MANUAL</item>
+    </string-array>
+    
+    <!-- Log Level Options -->
+    <string-array name="log_level_options">
+        <item>Verbose</item>
+        <item>Debug</item>
+        <item>Info</item>
+        <item>Warning</item>
+        <item>Error</item>
+    </string-array>
+    
+    <string-array name="log_level_values">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+    </string-array>
+    
+    <!-- Date/Time Format Examples -->
+    <string-array name="date_format_examples">
+        <item>EEE dd.MM (Mon 15.03)</item>
+        <item>EEEE, MMMM dd (Monday, March 15)</item>
+        <item>yyyy-MM-dd (2024-03-15)</item>
+        <item>MM/dd/yyyy (03/15/2024)</item>
+        <item>dd/MM/yyyy (15/03/2024)</item>
+        <item>HH:mm (14:30)</item>
+        <item>h:mm a (2:30 PM)</item>
+        <item>EEE dd.MM HH:mm (Mon 15.03 14:30)</item>
+    </string-array>
+    
+    <!-- Weather Condition Icons -->
+    <string-array name="weather_conditions">
+        <item>sunny</item>
+        <item>partly_cloudy</item>
+        <item>cloudy</item>
+        <item>rainy</item>
+        <item>stormy</item>
+        <item>snowy</item>
+        <item>foggy</item>
+        <item>windy</item>
+    </string-array>
+    
+    <!-- Battery Status Options -->
+    <string-array name="battery_status_options">
+        <item>Good</item>
+        <item>Low</item>
+        <item>Critical</item>
+        <item>Charging</item>
+        <item>Full</item>
+    </string-array>
+    
+    <!-- Notification Priority Options -->
+    <string-array name="notification_priority_options">
+        <item>Min</item>
+        <item>Low</item>
+        <item>Default</item>
+        <item>High</item>
+        <item>Max</item>
+    </string-array>
+    
+    <!-- Calendar Event Types -->
+    <string-array name="calendar_event_types">
+        <item>Meeting</item>
+        <item>Appointment</item>
+        <item>Birthday</item>
+        <item>Holiday</item>
+        <item>Reminder</item>
+        <item>Task</item>
+        <item>Other</item>
+    </string-array>
+    
+    <!-- Power Management Options -->
+    <string-array name="power_management_options">
+        <item>Balanced</item>
+        <item>Power Saver</item>
+        <item>Performance</item>
+        <item>Custom</item>
+    </string-array>
+    
+    <!-- Display Refresh Rates -->
+    <string-array name="refresh_rate_options">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    
+    <string-array name="refresh_rate_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    
+</resources>
